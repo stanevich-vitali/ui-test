@@ -1,0 +1,46 @@
+{
+    "name": "usc",
+    "version": "0.0.1",
+    "description": "Stencil Component Starter",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "es2015": "dist/esm/index.mjs",
+    "es2017": "dist/esm/index.mjs",
+    "types": "dist/types/index.d.ts",
+    "collection": "dist/collection/collection-manifest.json",
+    "collection:main": "dist/collection/index.js",
+    "unpkg": "dist/usc/usc.js",
+    "files": [
+        "dist/",
+        "loader/"
+    ],
+    "scripts": {
+        "build": "stencil build --docs",
+        "start:prod": "stencil build --watch --serve --prod",
+        "start": "stencil build --dev --watch --serve",
+        "test": "stencil test --spec --e2e",
+        "test.watch": "stencil test --spec --e2e --watchAll",
+        "test:e2e": "stencil test --e2e",
+        "generate": "stencil generate"
+    },
+    "devDependencies": {
+        "@stencil/core": "^1.8.5",
+        "@stencil/sass": "^1.1.1",
+        "@types/jest": "24.0.25",
+        "@types/puppeteer": "1.19.0",
+        "jest": "24.9.0",
+        "jest-cli": "24.9.0",
+        "puppeteer": "1.19.0",
+        "serverless-finch": "^2.5.2",
+        "stencil-inline-svg": "^1.0.1"
+    },
+    "engines": {
+        "node": "12.14.1",
+        "npm": "6.13.4"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "spectre.css": "^0.5.8",
+        "stencil-click-outside": "^1.5.0"
+    }
+}

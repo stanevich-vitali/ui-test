@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+        />
+        <title>Stencil Component Starter</title>
+        <link rel="icon" href="/build/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="/assets/css/spectre.css" />
+        <link rel="stylesheet" href="/build/usc.css"></script>
+        <style>
+            /* Dropshadow effect for navbar. */
+            .navshadow {
+                box-shadow: 2px 2px 2px lightgrey;
+            }
+            .nbc-authors {
+                font-size: 14px;
+            }
+        </style>
+        <script type="module" src="/build/usc.esm.js"></script>
+        <script nomodule src="/build/usc.js"></script>
+    </head>
+    <body>
+        <!-- Construct top navbar -->
+        <header class="navbar navshadow" style="padding: 1rem;">
+            <!-- Logo on the left -->
+            <div class="navbar-primary">
+                <a href="#" class="navbar-brand"
+                    ><span class="text-large">YourSite</span></a
+                >
+            </div>
+            <!-- Supporting links on on the right -->
+            <div class="navbar-section">
+                <a href="#" class="btn btn-link">FAQ</a>
+                <a href="#" class="btn btn-link">Support</a>
+                <a href="#" class="btn btn-link">About</a>
+                <a href="#" class="btn btn-success">Sign Up</a>
+            </div>
+        </header>
+        <div class="container grid-lg">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">News</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Mobile phones</a>
+                </li>
+            </ul>
+            <h1>
+                Best phone in the US for 2020: the top 15 smartphones we've
+                tested
+            </h1>
+            <p class="nbc-authors">
+                By <a href="#" rel="author"> <span>Matt Swider</span></a
+                >, <a href="#" rel="author"><span>David Lumb</span></a>
+                <time datetime="2020-01-03T11:48:03+00:00">15 days ago</time>
+            </p>
+            <p class="text-gray">
+                Our lineup of best smartphones includes the iPhone 11 and Google
+                Pixel 4
+            </p>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title h5">iPhone XR</div>
+                    <div class="card-subtitle text-gray">
+                        The most affordable of the new iPhones
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img
+                        src="assets/images/iphone-xr.jpg"
+                        class="img-responsive"
+                    />
+                </div>
+
+                <div class="card-body">
+                    <p>
+                        <strong>Release date: </strong>October 2018 |
+                        <strong>Weight: </strong>194g |
+                        <strong>Dimensions: </strong>150.9 x 75.7 x 8.3mm |
+                        <strong>OS: </strong>iOS 12 |
+                        <strong>Screen size: </strong>6.1-inch |
+                        <strong>Resolution: </strong>1792x828 |
+                        <strong>CPU: </strong>A12 Bionic |
+                        <strong>RAM: </strong>3GB |
+                        <strong>Storage: </strong>64/128/256GB |
+                        <strong>Battery: </strong>2,942mAh |
+                        <strong>Rear camera: </strong>12MP |
+                        <strong>Front camera: </strong>7MP
+                    </p>
+                    <p>
+                        Apple’s iPhone XR was a little bit late to launch after
+                        the iPhone XS and XS Max that launched a bit earlier.
+                        But thanks to its lower price point, it makes for a more
+                        affordable option than the XS models. For some, the
+                        powerful internals paired with the large screen and
+                        lower price will make for a compelling buy, especially
+                        thanks to the surprisingly good battery.
+                    </p>
+                    <p>
+                        <strong>Screen:</strong> The iPhone XR screen isn’t its
+                        strongest selling point, as it’s a notable downgrade.
+                        It’s resolution falls short of Full HD, and it’s not a
+                        battery-friendly OLED. Still, the Liquid Retina LCD
+                        display used still has good sharpness and brilliant
+                        colors.That said, the 6.1-inch display offers plenty of
+                        real estate.
+                    </p>
+                    <p>
+                        <strong>Battery life:</strong> Though this is the more
+                        affordable iPhone to come out in Apple’s latest batch,
+                        its battery life stands out. Thanks to the A12 Bionic
+                        and chipset and lower resolution, the battery
+                        performance is great, making it the first iPhone that
+                        could comfortably get through a whole day of use in our
+                        testing without us worrying about.
+                    </p>
+                    <p>
+                        <strong>Camera:</strong> While the other iPhones have
+                        dual rear cameras, the iPhone XR has just one sensor.
+                        For normal photo shooting, it does a great job though.
+                        The lack of a second camera also reduces the quality of
+                        Portrait Mode photos. But, the detractors came largely
+                        in comparison to other top cameras.&nbsp;
+                    </p>
+                    <p>
+                        <strong>Mini verdict:</strong> The iPhone XR has all the
+                        performance of its more expensive siblings on the
+                        inside. It’s camera and screen may not be as impressive,
+                        but where it truly dazzles is in the battery life. If
+                        you want an iPhone with a battery you won’t always worry
+                        about, the iPhone XR is it.
+                    </p>
+                    <p>
+                        <strong>Read more:</strong>
+                        <a href="#"><u>iPhone XR review</u></a>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary" data-scu="1111">
+                        Buy iPhone XR
+                    </button>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title h5">iPhone 11 Pro Max</div>
+                    <div class="card-subtitle text-gray">
+                        The spec-superior iPhone
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img
+                        src="assets/images/iphone-11-pro-max.jpg"
+                        class="img-responsive"
+                    />
+                </div>
+
+                <div class="card-body">
+                    <p>
+                        <strong>Release date: </strong>September 2019 |
+                        <strong>Weight: </strong>226g |
+                        <strong>Dimensions: </strong>158 x 77.8 x 8.1mm |
+                        <strong>OS: </strong>iOS 13 |
+                        <strong>Screen size: </strong>6.5-inch |
+                        <strong>Resolution: </strong>1242 x 2688 |
+                        <strong>CPU: </strong>A13 Bionic |
+                        <strong>RAM: </strong>4GB TBC |
+                        <strong>Storage: </strong>64/256/512GB |
+                        <strong>Battery: </strong>3,500mAh TBC |
+                        <strong>Rear camera: </strong>12MP + 12MP + 12MP |
+                        <strong>Front camera: </strong>12MP
+                    </p>
+                    <p>
+                        The iPhone 11 Pro Max is the biggest phone Apple has
+                        created, and it's also the most high-spec'd phone from
+                        the company.
+                    </p>
+                    <p>
+                        It's expensive even by iPhone standards, but it features
+                        an all-screen, notch-toting, almost bezel-free design
+                        with masses of power under the hood. The big upgrades
+                        compared to the iPhone XS Max are the improved cameras
+                        and boosted power.&nbsp;
+                    </p>
+                    <p>
+                        Note: we only picked one of Apple's new top-tier
+                        flagships, as the iPhone 11 Pro and iPhone 11 Pro Max
+                        are virtually the same phone - but the latter is
+                        physically larger (6.5-inch screen vs. 5.8-inch on the
+                        11 Pro) and has a higher-capacity battery, so the iPhone
+                        11 Pro Max is our pick. If you like smaller phones,
+                        check out our
+                        <a href="#">iPhone 11 Pro</a>
+                        review.
+                    </p>
+                    <p>
+                        <strong>Screen:</strong> The 6.5-inch OLED screen on the
+                        iPhone 11 Pro Max really grabbed our attention - it's
+                        fantastic for video streaming and gaming.
+                    </p>
+                    <p>
+                        <strong>Battery life: </strong>This is some of the best
+                        battery life we've ever experienced on an iPhone, with
+                        further optimizations within iOS and a larger cell
+                        inside the phone itself. It's still not game-changing,
+                        but it's better than other Apple handsets.
+                    </p>
+                    <p>
+                        <strong>Camera: </strong>The triple camera setup on the
+                        iPhone 11 Pro Max is fantastic. This is the first time
+                        Apple has implemented three rear cameras, and it offers
+                        a great experience. Plus, it can be fun to use.
+                    </p>
+                    <p>
+                        <strong>Mini verdict: </strong>If your hands are as big
+                        as your bank balance, the iPhone 11 Pro Max takes
+                        Apple's smartphone to a whole new level with an improved
+                        camera and more.
+                    </p>
+                    <p>
+                        <strong>Read our in-depth </strong
+                        ><a href="#">iPhone 11 Pro Max review</a>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary" data-scu="2222">
+                        Buy iPhone 11 Pro Max
+                    </button>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title h5">Samsung Galaxy S10 Plus</div>
+                    <div class="card-subtitle text-gray">
+                        A big phone with a few new features
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img
+                        src="assets/images/s-galaxy-s10-plus.jpg"
+                        class="img-responsive"
+                    />
+                </div>
+
+                <div class="card-body">
+                    <p>
+                        <strong>Release date: </strong>March 2019 |
+                        <strong>Weight: </strong>175g / 198g (ceramic) |
+                        <strong>Dimensions: </strong>157.6 x 74.1 x 7.8mm |
+                        <strong>OS: </strong>Android Pie |
+                        <strong>Screen size: </strong>6.4-inch |
+                        <strong>Resolution: </strong>3040×1440 |
+                        <strong>CPU: </strong>Snapdragon 855 |
+                        <strong>RAM: </strong>8/12GB |
+                        <strong>Storage: </strong>128/512GB/1TB (up to 1.5TB
+                        with card) | <strong>Battery: </strong>4,100mAh |
+                        <strong>Rear camera: </strong>12MP + 12MP + 16MP |
+                        <strong>Front camera: </strong>10MP + 8MP
+                    </p>
+                    <p>
+                        The Samsung Galaxy S10 Plus is the best phone you can
+                        get for Android right now, if you're just going by
+                        specs. Naturally, as the first flagship of 2019, its new
+                        Snapdragon 855 processor is the big standout here with
+                        even better performance than the phones that closed out
+                        2018. Add in a few cool new (but not essential)
+                        features, Samsung's stunning-as-ever display and design
+                        as well as top specs and you have a true flagship – for
+                        a true flagship price, of course, starting at
+                        &nbsp;$999.
+                    </p>
+                    <p>
+                        <strong>Screen: </strong>The 6.4-inch Super AMOLED
+                        display is gorgeous, but that's not surprising. it's the
+                        same size as the Galaxy Note 9's screen, and far larger
+                        than the Galaxy S9 Plus' 6.2-inch display. The 'Infinity
+                        O' display ditches the notch for a punch-hole in the top
+                        right corner. Yes, it's twice as wide as the hole in the
+                        S10 and S10e, but how else will you fit in the extra
+                        selfie camera? This choice (and thin bezels) enable a
+                        stunning 93.1% screen-to-body ratio, which keeps the
+                        phone as slim as possible.
+                    </p>
+                    <p>
+                        <strong>Battery Life: </strong>The S10 Plus' 4,100mAh
+                        battery is Samsung's largest yet, just nudging past the
+                        Note 9's 4,000mAh and far beyond the 3,500mAh one in the
+                        Galaxy S9 Plus. While that didn't lead the new phone's
+                        battery life to outpace its predecessors, it still kept
+                        it going through the full day with 10%-30% to spare in
+                        our casual testing. This is, of course, with standard
+                        settings: bump up the resolution from Full HD+ to QHD+,
+                        brighten the display or keep it on longer, and the
+                        battery will drain faster.
+                    </p>
+                    <p>
+                        <strong>Camera: </strong>The S10 Plus has three cameras
+                        on the back: a 12MP regular lens, a 12MP optically
+                        zoomed telephoto lens, and a new 16MP ultra-wide lens.
+                        We found the photo quality to be a bit variable –
+                        perhaps due to the dual-aperture main lens – with good
+                        but not consistent low-light performance. It's not quite
+                        up to par with the Google Pixel 3's Night Vision mode,
+                        but it still outpaces most other phone cameras on the
+                        market. The two front-facing cameras allow depth for
+                        Portrait mode-style photos, which is worth the wider
+                        punch-hole gap in the display.
+                    </p>
+                    <p>
+                        <strong>Mini verdict: </strong>After some time with the
+                        standard Galaxy S10 and Galaxy S10e, we can say for sure
+                        that the S10 Plus beats them out. It has the best specs,
+                        cameras and battery life of the whole set, and it's not
+                        too much more expensive than the other models. If you
+                        want a phone that will blow every other device out of
+                        the water in early 2019 – as well as its in-screen
+                        fingerprint sensor and reverse charging – this is your
+                        only real option.&nbsp;
+                    </p>
+                    <p>
+                        <strong>Read more: </strong
+                        ><a href="#">Samsung Galaxy S10 Plus review</a>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary" data-scu="3333">
+                        Buy Samsung Galaxy S10 Plus
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div
+                class="columns"
+                style="margin-top: 5%; margin-left: 10%; margin-right: 10%"
+                ;
+            >
+                <div class="column col-3">
+                    <ul>
+                        <h5>About</h5>
+                        <li><a href="#">Server status</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Privacy poliscy</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+                <!-- .column .col-3 -->
+
+                <div class="column col-3">
+                    <ul>
+                        <h5>Mobile</h5>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Google</a></li>
+                        <li><a href="#">Amazon</a></li>
+                    </ul>
+                </div>
+                <!-- .column .col-3 -->
+
+                <div class="column col-3">
+                    <ul>
+                        <h5>Help</h5>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Tutorial</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Command reference</a></li>
+                        <li><a href="#">API reference</a></li>
+                    </ul>
+                </div>
+                <!-- .column .col-3 -->
+
+                <div class="column col-3">
+                    <ul>
+                        <h5>Making money</h5>
+                        <li><a href="#">Affiliate program</a></li>
+                        <li><a href="#">Getting started</a></li>
+                        <li><a href="#">Approval process</a></li>
+                    </ul>
+                </div>
+                <!-- .column .col-3 -->
+            </div>
+            <!-- columns -->
+        </footer>
+        <!-- footer-->
+        <div>
+            <usc-outlet lang="es" theme="default"></usc-outlet>
+        </div>
+        <usc-shopping-button lang="es" theme="orange"></usc-shopping-button>
+    </body>
+</html>

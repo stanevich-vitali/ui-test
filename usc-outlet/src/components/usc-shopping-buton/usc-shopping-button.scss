@@ -1,0 +1,22 @@
+:host {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.usc-shopping-button {
+    // TODO: According to the text node should be "Gotham Black"
+    // font-family: "Gotham Book";
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    svg {
+        // TOODO: According to the specs should be 60x60 for desctops
+        width: 50px;
+        height: 50px;
+    }
+}

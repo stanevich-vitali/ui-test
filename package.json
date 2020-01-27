@@ -1,0 +1,55 @@
+{
+    "name": "ui",
+    "version": "1.0.0",
+    "description": "[![N|Solid](https://github.inbcu.com/avatars/u/5656?s=200)](https://www.nbc.com)",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "@stencil/eslint-plugin": "^0.2.1",
+        "@typescript-eslint/eslint-plugin": "^2.16.0",
+        "@typescript-eslint/parser": "^2.16.0",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.9.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-react": "^7.18.0",
+        "husky": "^4.0.10",
+        "lint-staged": "^10.0.0",
+        "prettier": "^1.19.1",
+        "typescript": "^3.7.5"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint:outlet": "eslint usc-outlet/src/**/*.{js,ts,tsx} --config ./usc-outlet/.eslintrc.js --fix --quiet",
+        "lint:widget": "eslint usc-widget/src/**/*.{js,ts,tsx} --config ./usc-widget/.eslintrc.js --fix --quiet"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.inbcu.com:commerce-partnerships/ui.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,ts,css,scss,json,md,tsx,jsx}": [
+            "prettier --write",
+            "git add"
+        ],
+        "usc-outlet/src/**/**.{ts,tsx}": [
+            "eslint --config ./usc-outlet/.eslintrc.js --fix --quiet",
+            "git add"
+        ],
+        "usc-widget/src/**/**.{ts,tsx}": [
+            "eslint --config ./usc-widget/.eslintrc.js --fix --quiet",
+            "git add"
+        ]
+    },
+    "engines": {
+        "node": "12.14.1",
+        "npm": "6.13.4"
+    }
+}

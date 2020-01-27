@@ -1,0 +1,23 @@
+:host {
+    display: block;
+    width: 500px;
+    height: calc(100vh - 200px);
+    overflow: auto;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background: white;
+    border: 1px solid black;
+    padding: 20px;
+    transition: transform 0.3s ease-in 0s;
+}
+
+:host(.is-hidden) {
+    -ms-transform: translateX(100%) translateX(50px);
+    transform: translateX(calc(100% + 50px));
+    opacity: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
