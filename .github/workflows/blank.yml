@@ -25,7 +25,7 @@ jobs:
           npm i 
           npm run build
           npm test
-        working-directory: ./usc-outlet
+        working-directory: ./ui-test/usc-outlet
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -36,7 +36,7 @@ jobs:
         
       - name: deploy static site with serverless
         run: serverless client deploy
-        working-directory: ./usc-outlet
+        working-directory: ./ui-test/usc-outlet
 
       - name: Archive production artifacts
         uses: actions/upload-artifact@v1
