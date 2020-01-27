@@ -21,7 +21,11 @@ jobs:
         run: npm install --save serverless-finch
 
       - name: building React application
-        run: cd ./usc-outlet && npm i && npm run build
+        run: |
+          npm i 
+          npm run build
+          npm test
+        working-directory: ./usc-outlet
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -32,6 +36,7 @@ jobs:
         
       - name: deploy static site with serverless
         run: serverless client deploy
+        working-directory: ./usc-outlet
 
       - name: Archive production artifacts
         uses: actions/upload-artifact@v1
