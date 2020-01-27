@@ -40,7 +40,7 @@ jobs:
           aws-region: us-east-2
         
       - name: deploy static site with serverless
-        run: serverless client deploy
+        run: serverless client deploy --force
         working-directory: ./usc-outlet
 
       - name: Archive production artifacts
