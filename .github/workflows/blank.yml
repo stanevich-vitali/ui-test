@@ -24,14 +24,12 @@ jobs:
         run: |
           npm i 
           npm run build --if-present
-          npm test
         working-directory: ./usc-widget
       
       - name: building React application
         run: |
           npm i 
           npm run build --if-present
-          npm test
         working-directory: ./usc-outlet
 
       - name: Configure AWS Credentials
