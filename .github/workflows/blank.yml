@@ -13,7 +13,9 @@ jobs:
         with:
           node-version: '12.14.1'
       - name: install serverless framework
-        run: npm i -g serverless      
+        run: npm i -g serverless
+      - name: install serverlees 'finch' plugin
+        run: npm install --save serverless-finch
       - name: npm install, build, and test
         run: |
           npm install
