@@ -12,7 +12,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '12.14.1'
+          node-version: '12.14.x'
 
       - name: install serverless framework
         run: npm i -g serverless
@@ -23,9 +23,9 @@ jobs:
       - name: building React application
         run: |
           npm i 
-          npm run build
+          npm run build --if-present
           npm test
-        working-directory: ./ui-test/usc-outlet
+        working-directory: ./usc-outlet
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -36,7 +36,7 @@ jobs:
         
       - name: deploy static site with serverless
         run: serverless client deploy
-        working-directory: ./ui-test/usc-outlet
+        working-directory: ./usc-outlet
 
       - name: Archive production artifacts
         uses: actions/upload-artifact@v1
